@@ -15,20 +15,20 @@ Scores range from **-3** (worst) to **+11** (best). The end result is a rank-ord
 ## What's in this repo
 
 - **`ship_framework.md`** — The full scoring framework with definitions, key questions, common traps, and interpretation guidelines
-- **`score.md`** — A Claude Code / AI assistant skill that conducts structured interviews to score features against the framework
+- **`skill.md`** — A Claude Code / AI assistant skill that conducts structured interviews to score features against the framework
 
 ## Using the scoring skill
 
-The `score.md` file is designed to work as a [Claude Code custom command](https://docs.anthropic.com/en/docs/claude-code/tutorials/custom-slash-commands) or as instructions for any AI assistant.
+The `skill.md` file is designed to work as a [Claude Code custom command](https://docs.anthropic.com/en/docs/claude-code/tutorials/custom-slash-commands) or as instructions for any AI assistant.
 
 ### With Claude Code
 
-1. Copy `score.md` and `ship_framework.md` into your project's `.claude/commands/` directory (or wherever you keep custom commands)
+1. Copy `skill.md` and `ship_framework.md` into your project's `.claude/commands/` directory (or wherever you keep custom commands)
 2. Run `/score` to start a scoring session
 
 ### With any AI assistant
 
-Paste the contents of `ship_framework.md` and `score.md` into your system prompt or project context. Then ask the assistant to score a feature.
+Paste the contents of `ship_framework.md` and `skill.md` into your system prompt or project context. Then ask the assistant to score a feature.
 
 ### On your own
 
@@ -45,9 +45,9 @@ Just read `ship_framework.md` and score features yourself. The framework works f
 
 ## Credits
 
-The SHIP Score framework was created by [Michele Hansen](https://bsky.app/profile/mjwhansen.com), author of [*Deploy Empathy: A Practical Guide to Interviewing Customers.*](https://www.amazon.com/Deploy-Empathy-practical-interviewing-customers/dp/173744660X).
+The SHIP Score framework was created by **[Michele Hansen](https://bsky.app/profile/mjwhansen.com)**, CEO & Co-Founder of [Geocodio](https://www.geocod.io) and author of [*Deploy Empathy: A Practical Guide to Interviewing Customers.*](https://www.amazon.com/Deploy-Empathy-practical-interviewing-customers/dp/173744660X).
 
-Massive thanks to [Ben Aldred](https://www.linkedin.com/in/benaldred/), founder of user research operations platform [Participant Kit](https://participantkit.com/), for sharing the Claude Code skill he made based on the framework as well as adding the "Common Traps" concept to the scoring framework. His skill serves as the basis of this skill. 
+Massive thanks to **[Ben Aldred](https://www.linkedin.com/in/benaldred/)**, founder of user research operations platform [Participant Kit](https://participantkit.com/), for sharing the Claude Code skill he made based on the framework, for testing the framework over many months and providing helpful feedback, and adding the "Common Traps" concept to the scoring framework. His skill serves as the basis of this skill. Thanks for all of your feedback and collaboration, Ben!
 
 ## License
 
