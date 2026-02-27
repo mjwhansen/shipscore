@@ -1,4 +1,4 @@
-# SHIP Score
+# The SHIP Score
 
 A dead-simple prioritization framework for indie founders and small teams.
 
