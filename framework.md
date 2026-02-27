@@ -1,43 +1,11 @@
 <!-- Version: 2026-02-27 -->
 # SHIP Scoring Framework
 
-**Formula:** `SHIP Score = Income + Strategy - Effort`
+**Formula:** `SHIP Score = Strategic Heft + Income + Strategy - Perspiration`
 
 **Score range:** -3 (worst) to +11 (best)
 
----
-
-## Income (1-5): Risk-Adjusted Revenue Impact
-
-Measures **willingness to pay** and **revenue risk**. Certainty adjusts score downward.
-
-**Key question:** How confident are you that buyers would pay us a lot more for this, or leave without it?
-
-| Score | Definition |
-|-------|------------|
-| **5** | **Revenue committed or at immediate risk** — multiple customers require this to renew (active churn risk), fixes a broken payment/billing process that is measurably leading to lost revenue, addresses compliance/resiliency requirement threatening existing revenue, fixes critical bug causing measurable churn, prospect committed to sign if built (sale-contingent), agreed during sales/onboarding as part of closing |
-| **4** | **High-confidence revenue with existing validation** — existing customers explicitly requested AND committed to paying, directly enables validated upsell/expansion opportunity |
-| **3** | **Probable revenue with some validation** — customers expressed willingness to pay but haven't committed, fits proven buyer categories but specific demand untested, maintains table stakes to prevent future churn, technical debt/maintenance preventing imminent issues |
-| **2** | **Possible revenue with limited validation** — assumed valuable but no direct customer validation, may help sales conversations but not a blocker, general improvements with unclear revenue connection, preventive maintenance with no immediate risk |
-| **1** | **Speculative or minimal revenue impact** — no clear relationship to revenue, internal tools with indirect impact, "nice to have" from non-paying users/prospects |
-
-### Key Questions
-
-- Would a buyer pay more for this, or leave without it?
-- Who is asking — buyers (budget holders) or users (no purchasing power)?
-- Are the people who want this actually willing to pay us for this?
-- How certain are we? (Uncertainty adjusts score downward)
-- Is this a churn risk or lost sale factor?
-
-### Common Traps
-
-- **User requests ≠ buyer demand** — users are not always the ones with purchasing power
-- **Request count ≠ revenue impact** — consider which users/buyers are asking for it; if it is being requested by low-paying customers or non-paying users, cannot weight as highly as requests from high-paying customers
-- **"Nice to have" without pain (pain should be evinced by a current manual process, workarounds, or clear frustration)** = highly speculative (score 1)
-
----
-
-## Strategy (1-5): Competitive Differentiation
+## Strategic Heft (1-5): Competitive Differentiation
 
 Measures **competitive advantage** and **differentiation in ways customers care about**.
 
@@ -69,6 +37,36 @@ Measures **competitive advantage** and **differentiation in ways customers care 
 - consider customer segments and ICPs; competitive advantages for one customer segment may be different for another segment
 - **"Strategic foundation" ≠ customer-facing differentiation**
 - **Table stakes features** are usually Strategy 1-2, not higher
+
+---
+
+## Income (1-5): Risk-Adjusted Revenue Impact
+
+Measures **willingness to pay** and **revenue risk**. Certainty adjusts score downward.
+
+**Key question:** How confident are you that buyers would pay us a lot more for this, or leave without it?
+
+| Score | Definition |
+|-------|------------|
+| **5** | **Revenue committed or at immediate risk** — multiple customers require this to renew (active churn risk), fixes a broken payment/billing process that is measurably leading to lost revenue, addresses compliance/resiliency requirement threatening existing revenue, fixes critical bug causing measurable churn, prospect committed to sign if built (sale-contingent), agreed during sales/onboarding as part of closing |
+| **4** | **High-confidence revenue with existing validation** — existing customers explicitly requested AND committed to paying, directly enables validated upsell/expansion opportunity |
+| **3** | **Probable revenue with some validation** — customers expressed willingness to pay but haven't committed, fits proven buyer categories but specific demand untested, maintains table stakes to prevent future churn, technical debt/maintenance preventing imminent issues |
+| **2** | **Possible revenue with limited validation** — assumed valuable but no direct customer validation, may help sales conversations but not a blocker, general improvements with unclear revenue connection, preventive maintenance with no immediate risk |
+| **1** | **Speculative or minimal revenue impact** — no clear relationship to revenue, internal tools with indirect impact, "nice to have" from non-paying users/prospects |
+
+### Key Questions
+
+- Would a buyer pay more for this, or leave without it?
+- Who is asking — buyers (budget holders) or users (no purchasing power)?
+- Are the people who want this actually willing to pay us for this?
+- How certain are we? (Uncertainty adjusts score downward)
+- Is this a churn risk or lost sale factor?
+
+### Common Traps
+
+- **User requests ≠ buyer demand** — users are not always the ones with purchasing power
+- **Request count ≠ revenue impact** — consider which users/buyers are asking for it; if it is being requested by low-paying customers or non-paying users, cannot weight as highly as requests from high-paying customers
+- **"Nice to have" without pain (pain should be evinced by a current manual process, workarounds, or clear frustration)** = highly speculative (score 1)
 
 ---
 
