@@ -1,21 +1,21 @@
 ---
-name: skill
-description: Conduct a SHIP interview to score and prioritize a product feature or bug. Use when the user runs /score, asks to "score a feature", "prioritize the backlog", or wants to interview and score product features using the SHIP framework (Income + Strategy - Perspiration).
+name: ship-score
+description: Conduct a SHIP interview to score and prioritize a product feature or bug. Use when the user runs /ship-score, asks to "score a feature", "prioritize the backlog", or wants to interview and score product features using the SHIP framework (Income + Strategy - Perspiration).
 ---
 
-# Scoring Interview Skill
+# SHIP Score
 
 Conduct an in-depth interview to score product features using the SHIP framework. Goal: reach **90-95% confidence** on each dimension before proposing scores.
 
 ## CRITICAL: Read the Framework First
 
-**BEFORE doing anything else, you MUST read `ship_framework.md` in this project.**
+**BEFORE doing anything else, read [the SHIP framework](references/ship_framework.md).**
 
 This is the canonical source for all scoring definitions. Read it at the start of every scoring session and keep it in context throughout. Do not rely on memory or summaries — the exact definitions, score tiers, common traps, and key questions matter.
 
 ## Process
 
-1. **Read `ship_framework.md`** — mandatory first step, every session
+1. **Read [references/ship_framework.md](references/ship_framework.md)** — mandatory first step, every session
 2. Ask the user what feature, bug, or idea they want to score (or let them paste a description)
 3. Display feature context as an index card
 4. Interview for each dimension until 90-95% confident
@@ -127,6 +127,6 @@ Sort by SHIP score descending. Flag any scores with low confidence.
 
 This skill is **storage-agnostic**. It does not assume any particular issue tracker, database, or project management tool.
 
-If the user has a backlog file, spreadsheet, or issue tracker integrated into the project, use it. Otherwise, simply conduct the interview and present scores in the conversation. The user can record scores however they prefer.
+If the user has a backlog file, spreadsheet, or issue tracker integrated into the project, use it. Otherwise, conduct the interview and present scores in the conversation. The user can record scores however they prefer.
 
 If the user asks you to save or persist scores, ask where they'd like them stored (markdown file, CSV, JSON, etc.) and write accordingly.
