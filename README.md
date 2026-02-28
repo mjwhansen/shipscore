@@ -14,25 +14,40 @@ Scores range from **-3** (worst) to **+11** (best). The end result is a rank-ord
 
 ## What's in this repo
 
-- **`ship_framework.md`** — The full scoring framework with definitions, key questions, common traps, and interpretation guidelines
-- **`skill.md`** — A Claude Code / AI assistant skill that conducts structured interviews to score features against the framework
+This repo is an [Agent Skill](https://agentskills.io) — a portable package of instructions and reference material that any compatible AI agent can discover and use.
 
-## Using the scoring skill
+```
+ship-score/
+├── SKILL.md                        # Agent skill definition (instructions + frontmatter)
+├── references/
+│   └── ship_framework.md           # Full scoring framework with definitions and guidance
+├── README.md
+└── license.md
+```
 
-The `skill.md` file is designed to work as a [Claude Code custom command](https://docs.anthropic.com/en/docs/claude-code/tutorials/custom-slash-commands) or as instructions for any AI assistant.
+- **`SKILL.md`** — The skill that conducts structured interviews to score features against the framework
+- **`references/ship_framework.md`** — The full scoring framework with definitions, key questions, common traps, and interpretation guidelines
+
+## Using the skill
+
+### With any Agent Skills-compatible agent
+
+This skill works with any agent that supports the [Agent Skills open standard](https://agentskills.io), including Claude Code, Cursor, Goose, Amp, VS Code, GitHub Copilot, OpenAI Codex, and [many others](https://agentskills.io/home).
+
+Clone or copy this repo into wherever your agent discovers skills, then ask the agent to score a feature. The agent will load the skill automatically when it matches your request.
 
 ### With Claude Code
 
-1. Copy `skill.md` and `ship_framework.md` into your project's `.claude/commands/` directory (or wherever you keep custom commands)
-2. Run `/score` to start a scoring session
+1. Copy the `ship-score` directory (containing `SKILL.md` and `references/`) into your project's `.claude/skills/` directory
+2. Ask Claude to score a feature, prioritize a backlog item, or run `/ship-score`
 
 ### With any AI assistant
 
-Paste the contents of `ship_framework.md` and `skill.md` into your system prompt or project context. Then ask the assistant to score a feature.
+Paste the contents of `references/ship_framework.md` and `SKILL.md` into your system prompt or project context. Then ask the assistant to score a feature.
 
 ### On your own
 
-Just read `ship_framework.md` and score features yourself. The framework works fine with a spreadsheet and 5 minutes of honest thought per feature.
+Just read `references/ship_framework.md` and score features yourself. The framework works fine with a spreadsheet and 5 minutes of honest thought per feature.
 
 ## Quick reference
 

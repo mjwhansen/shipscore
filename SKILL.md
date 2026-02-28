@@ -1,6 +1,10 @@
 ---
 name: ship-score
-description: Conduct a SHIP interview to score and prioritize a product feature or bug. Use when the user runs /ship-score, asks to "score a feature", "prioritize the backlog", or wants to interview and score product features using the SHIP framework (Income + Strategy - Perspiration).
+description: Conduct a SHIP interview to score and prioritize a product feature or bug. Use when the user runs /ship-score, asks to "score a feature", "prioritize the backlog", or wants to interview and score product features using the SHIP framework (Strategic Heft + Income - Perspiration).
+license: MIT
+metadata:
+  author: michele-hansen
+  version: "2026-02-27"
 ---
 
 # SHIP Score
